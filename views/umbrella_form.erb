@@ -1,3 +1,5 @@
+<%= cookies %>
+
 <h1>Should I take an umbrella? </h1>
 <!-- by default forms use method="get"-->
  <!--post method is used to avoid having things appearing in query string-->
@@ -7,3 +9,11 @@
 
   <button>Submit </button>
 </form>
+
+<p> You last searched for: </p>
+
+<ul>
+  <li> <%= cookies["last_location"] %> </li>
+  <li> <%= cookies["last_lat"] %> </li>
+  <li> <%= cookies["last_lng"] %> </li>
+</ul>
